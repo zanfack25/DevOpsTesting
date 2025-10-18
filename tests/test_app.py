@@ -24,7 +24,7 @@ class TestApp:
         assert res == square_mumbers[1]
         
     def test_square_area_fail(self,square_mumbers):
-        res = square_mumbers[1] # Now the faileed test should pass 
+        res = square_mumbers[1] + 15 # This test should failled : 38*38 == 1444 + 15
         assert res == area_of_square(square_mumbers[0])
 
     def test_multiplication(self, numbers):
